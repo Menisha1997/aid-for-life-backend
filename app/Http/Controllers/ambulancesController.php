@@ -56,7 +56,8 @@ class ambulancesController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = ambulance::find($id);
+        return response()->json($data, 200);
     }
 
     /**

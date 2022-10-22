@@ -43,6 +43,7 @@ Route::post('AddHospital', [hospitalsController::class, 'store']);
 
 
 Route::get('AllAmbulances', [ambulancesController::class, 'index']);
+Route::get('Ambulance/{id}', [ambulancesController::class, 'show']);
 Route::post('AddAmbulance', [ambulancesController::class, 'store']);
 
 
