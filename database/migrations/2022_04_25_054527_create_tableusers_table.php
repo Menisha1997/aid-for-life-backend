@@ -20,9 +20,12 @@ class CreateTableusersTable extends Migration
             $table->string('phone_no')->default(' ');
             $table->string('dateOfBirth');
             $table->string('gender')->default(' ');
-            $table->string('bloodGroup')->default(' ');
+            $table->string('bloodGroup')->default(' ')->nullable();
             $table->string('email')->default(' ');
             $table->string('password')->default(' ');
+            $table->string('userType')->default(' ');
+            $table->string('ambulanceId')->default(' ')->nullable();
+            $table->string('hospitalId')->default(' ')->nullable();
             $table->timestamps();
         });
 

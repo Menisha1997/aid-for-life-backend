@@ -27,7 +27,10 @@ class tableuser extends Model
         'bloodGroup',
         'email',
         'password',
-        
+        'userType',
+        'ambulanceId',
+        'HospitalId',
+
     ];
 
 
